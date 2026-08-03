@@ -1,0 +1,225 @@
+/* ============================================
+   启英机械官网 响应式适配层 (responsive.css)
+   兼容中企动力 NSW 模板（body min-width:1200px 等定宽布局）
+   断点：<=768px 手机 / 769-1024px 平板
+   引入方式：所有 HTML <head> 中 <link> 引入
+   ============================================ */
+
+/* ---------- 全局 ---------- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { min-width: 0 !important; }
+img { max-width: 100%; height: auto; }
+
+/* ---------- 平板 (769-1024px) ---------- */
+@media screen and (max-width: 1024px) {
+    .header, .content, .footer, .link_c, .webox .content {
+        width: 96% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* ---------- 手机 (<=768px) ---------- */
+@media screen and (max-width: 768px) {
+
+    /* === 顶部导航（logo 单独行 + 菜单 2 排 4 块） === */
+    .h_top {
+        height: auto !important;
+        min-height: 56px !important;
+        padding: 0 !important;
+    }
+    .h_top > .header {
+        height: auto !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .h_top .t_logo {
+        float: none !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 8px 0 4px !important;
+        height: 44px;
+        line-height: 1;
+    }
+    .h_top .t_logo a img,
+    .h_top .t_logo img {
+        max-height: 36px !important;
+        width: auto !important;
+    }
+    .h_top .t_logo span { display: none !important; }
+
+    .h_top .menu {
+        float: none !important;
+        width: 100% !important;
+        height: auto !important;
+        line-height: 32px !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .h_top .menu ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 4px 0 !important;
+    }
+    .h_top .menu ul li {
+        float: none !important;
+        width: 25% !important;
+        margin: 0 !important;
+        display: block;
+    }
+    .h_top .menu ul li a {
+        font-size: 13px !important;
+        line-height: 30px !important;
+        padding: 0 2px !important;
+        display: block;
+        white-space: nowrap;
+    }
+
+    /* === banner 自适应：让 .ban_p li 用 padding 撑比例（兼容 nsw 轮播 JS） === */
+    .banner {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    .ban_p {
+        width: 100% !important;
+        height: auto !important;
+        overflow: hidden;
+        position: relative !important;
+    }
+    .ban_p ul {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .ban_p ul li {
+        position: relative !important;
+        width: 100% !important;
+        height: 0 !important;
+        padding-bottom: 40.5% !important;  /* 1920x777 ≈ 40.5% */
+        overflow: hidden !important;
+    }
+    .ban_p ul li a {
+        position: absolute !important;
+        left: 0; top: 0; right: 0; bottom: 0;
+        display: block !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+    .ban_t { display: none !important; }
+    /* 旧轮播 JS 可能在每个 li 上写了固定 height，用 !important 覆盖 */
+    .ban_p ul li[style*="height"] { height: 0 !important; }
+
+    /* === 中部内容流式 === */
+    .content, .header, .footer, .link_c, .webox .content {
+        width: 96% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+        box-sizing: border-box;
+    }
+    .webox { height: auto !important; padding: 10px 0 !important; }
+    .seabox { width: 100% !important; }
+    .seabox, .we_pho { float: none !important; text-align: center; }
+    .we_pho { display: none !important; }  /* 移动端用底部 mobile-tel 代替 */
+    .keyword a { display: inline-block; margin: 2px 4px; font-size: 13px; }
+
+    /* === 产品区块：3 列改单列 === */
+    .probox {
+        height: auto !important;
+        padding: 30px 0 !important;
+        background-size: cover !important;
+    }
+    .pro_c1, .pro_c2, .pro_c3, .probox > div, .probox ul li {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 auto 16px !important;
+    }
+    .casebox, .case_l, .case_r, .case_c, .case_l, .case_r, .case_cl, .case_cr {
+        width: 100% !important;
+        float: none !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* === 新闻 / 行业 / 案例 / 关于 区块 === */
+    .newbox, .new_c1, .til01, .newtil {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 12px !important;
+    }
+    .tecbox, .tecbox .con_l, .tecbox .con_r,
+    .abox, .abox .con_l, .abox .con_r,
+    .newsbox, .newsbox > div {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* === 友情链接 / 页脚 === */
+    .link_c a, .link_c span {
+        display: inline-block;
+        margin: 2px 6px 2px 0;
+    }
+    .footer {
+        font-size: 12px !important;
+        text-align: center;
+    }
+
+    /* === 隐藏右侧悬浮客服条（移动端用底部电话条） === */
+    .my-kefu,
+    .my-kefu-left,
+    .my-kefu-main,
+    .my-kefu-right,
+    .my-kefu-ftop,
+    .my-kefu-qq,
+    .my-kefu-tel,
+    .my-kefu-weixin,
+    .my-kefu-liuyan,
+    [class*="kefu"] {
+        display: none !important;
+    }
+    .prev, .next { display: none !important; }
+
+    /* === 通用图片不撑出容器 === */
+    .probox img, .casebox img, .newbox img, .abox img, .tecbox img,
+    .til01 img, .newtil img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* ---------- 手机端置底电话条（页面内 .mobile-tel 元素） ---------- */
+.mobile-tel { display: none; }
+@media screen and (max-width: 768px) {
+    .mobile-tel {
+        display: block !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        background: #1d4ed8;
+        color: #fff !important;
+        text-align: center;
+        font-size: 17px;
+        line-height: 46px;
+        height: 46px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    }
+    body { padding-bottom: 50px; }
+}

@@ -1,0 +1,56 @@
+
+     .p12-404{padding-top:100px;
+         
+     }
+                    .p12-404 dl {
+                        position: relative;
+                        width: 70%;
+                        margin: 0 auto;
+                        font-size: 16px;
+                    }
+                    
+                    .p12-404 dt {
+                        width: 50%;
+                    }
+                    
+                    .p12-404 dt img {
+                        width: 100%;
+                    }
+                    
+                    .p12-404 dd {
+                        width: 50%;
+                        padding-left: 50px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        margin-top: -50px;
+                        text-align: center;
+                    }
+                    
+                    .p12-404 dd h3 {
+                        height: 60px;
+                        font-size: 40px;
+                        line-height: 60px;
+                        color: #154c64;
+                    }
+                    
+                    .p12-404 dd h4 {
+                        color: #a8cc2a;
+                        font-size: 26px;
+                        font-weight: normal;
+                    }
+                    
+                    .p12-404 dd p {
+                        height: 30px;
+                        line-height: 30px;
+                        padding-top: 30px;
+                    }
+                    
+                    .p12-404 dd p a {
+                        color: #154c64;
+                    }
+                    
+                    .p12-404 dd p span {
+                        margin: 0 10px;
+                    }
+                

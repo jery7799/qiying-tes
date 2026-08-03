@@ -1,0 +1,61 @@
+
+     .p12-500{padding-top:100px;width:996px;margin:0 auto;}
+                .p12-500 dl {
+                    position: relative;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                
+                .p12-500 dt {
+                    width: 50%;
+                }
+                
+                .p12-500 dt img {
+                    width: 100%;
+                }
+                
+                .p12-500 dd {
+                    width: 50%;
+                    padding-left: 10px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    margin-top: -50px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+                
+                .p12-500 dd h3 {
+                    height: 60px;
+                    font-size: 40px;
+                    line-height: 60px;
+                    color: #154c64;
+                }
+                
+                .p12-500 dd h4 {
+                    color: #a8cc2a;
+                    font-size: 26px;
+                    font-weight: normal;
+                    padding-top: 20px;
+                }
+                
+                .p12-500 dd h4 b {
+                    color: #dc5d00;
+                    padding: 0 10px;
+                    font-weight: normal;
+                }
+                
+                .p12-500 dd p {
+                    height: 30px;
+                    line-height: 30px;
+                    padding-top: 30px;
+                }
+                
+                .p12-500 dd p a {
+                    color: #154c64;
+                }
+                
+                .p12-500 dd p span {
+                    margin: 0 10px;
+                }
+            
