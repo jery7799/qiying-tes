@@ -1,11 +1,12 @@
 
-	            jQuery(".banner").slide({
-	                titCell: ".ban_t em",
-	                mainCell: ".ban_p ul",
-	                effect: "fold",
-	                autoPlay: true,
-	                delayTime: 700
-	            });
+	            // banner slide 由 js/banner-fade.js 接管（fade 效果，兼容响应式高度自适应）
+            /*jQuery(".banner").slide({
+                titCell: ".ban_t em",
+                mainCell: ".ban_p ul",
+                effect: "fold",
+                autoPlay: true,
+                delayTime: 700
+            });*/
 	        
  
     function search(){
