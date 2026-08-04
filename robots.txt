@@ -2,3 +2,28 @@ User-agent:*
 Allow:/
 Disallow:/search.php
 Sitemap:https://www.kee-qy.com/sitemap.xml
+
+# ===== GEO: 显式开放 AI 爬虫抓取（生成式 AI 搜索引擎） =====
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
