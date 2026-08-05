@@ -6997,6 +6997,8 @@ var _hmt = _hmt || [];
     }
     var jg = document.querySelector('.endit-content .jg, .jg');
     if(jg) jg.remove();
+    // 移除 jQuery 重新生成的 gy_wz（无 id='gy_wz_static' 的）
+    document.querySelectorAll('.gy_wz:not(#gy_wz_static)').forEach(function(g){g.remove();});
   }
   ensure();
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',ensure);}
