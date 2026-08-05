@@ -1823,7 +1823,7 @@
 
 
 
- <div class="p12-aboutinfo-1-nr endit-content">
+ <div class="p12-aboutinfo-1-nr">
 
 
 
@@ -6258,5 +6258,21 @@ var _hmt = _hmt || [];
     {"@type": "ListItem", "position": 3, "name": "启英机械设备,东莞直线模组厂家,东莞市启英机械设备有限公司", "item": "https://www.kee-qy.com/helps/gyqy.html"}
   ]
 }
+</script>
+
+<script>
+(function(){
+  function ensure(){
+    var ec = document.querySelector('.p12-aboutinfo-1-nr');
+    if(!ec) return;
+    var jg = ec.querySelector('.jg');
+    if(jg) jg.remove();
+    var gy = ec.querySelector('.gy_wz');
+    if(gy){gy.style.display='block';gy.style.visibility='visible';}
+  }
+  ensure();
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',ensure);}
+  setInterval(ensure,200);
+})();
 </script>
 </body></html>
